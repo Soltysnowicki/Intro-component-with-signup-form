@@ -1,0 +1,92 @@
+/*color variables*/
+:root {
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --blue: hsl(248, 32%, 49%);
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+}
+/*margin & padding reset*/
+* {
+  margin: 0;
+  padding: 0;
+}
+/*body formatting*/
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-image: url("images/bg-intro-mobile.png");
+  background-color: var(--red);
+  background-position: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+h1 {
+  font-size: 1.75rem;
+  line-height: 1.625rem;
+  text-align: center;
+  max-width: 20.5rem;
+  margin-top: 5.5rem;
+}
+.description {
+  max-width: 20.5rem;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+.form-wrapper {
+  max-width: 20.5rem;
+  margin-top: 4rem;
+}
+.offer {
+  font-size: 0.9rem;
+
+  background-color: var(--blue);
+  border-radius: 0.625rem;
+  box-shadow: 0rem 0.5rem 0rem rgba(0, 0, 0, 0.14688);
+  color: white;
+  padding: 1rem 5rem 1rem 5rem;
+  text-align: center;
+}
+.try {
+  font-weight: 600;
+}
+
+.form-card {
+  background-color: white;
+  max-width: 20.5rem;
+  display: flex;
+  flex-flow: column;
+  border-radius: 0.625rem;
+  margin-top: 1.5rem;
+}
+form {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+input {
+  max-width: 17.5rem;
+  padding: 1rem 6rem 1rem 1rem;
+  margin-top: 1.5rem;
+  border-radius: 0.3rem;
+  border: 1px solid gray;
+}
+.claim {
+  max-width: 17.5rem;
+  background-color: var(--green);
+  color: white;
+  padding: 1rem 5rem 1rem 5rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
