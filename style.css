@@ -76,7 +76,7 @@ form {
 input {
   max-width: 17.5rem;
   padding: 0.8rem 4rem 0.8rem 0.8rem;
-  margin-top: 1.5rem;
+  margin-top: 1.6rem;
   border-radius: 0.3rem;
   border: 1px solid gray;
   font: inherit;
@@ -92,6 +92,51 @@ input {
   border-radius: 0.3rem;
   box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
 }
+.claim:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.error-message-1 {
+  position: absolute;
+  font-size: 0.6rem;
+  transform: translate(40%, 550%);
+  color: var(--red);
+}
+.error-message-2 {
+  position: absolute;
+  font-size: 0.6rem;
+  transform: translate(40%, 1100%);
+  color: var(--red);
+}
+.error-message-3 {
+  position: absolute;
+  font-size: 0.6rem;
+  transform: translate(40%, 1650%);
+  color: var(--red);
+}
+.error-message-4 {
+  position: absolute;
+  font-size: 0.6rem;
+  transform: translate(40%, 2150%);
+  color: var(--red);
+}
+.error-sign-1 {
+  position: absolute;
+  transform: translate(450%, 160%);
+}
+.error-sign-2 {
+  position: absolute;
+  transform: translate(450%, 490%);
+}
+.error-sign-3 {
+  position: absolute;
+  transform: translate(450%, 810%);
+}
+.error-sign-4 {
+  position: absolute;
+  transform: translate(450%, 1130%);
+}
+
 .agreement {
   margin-top: 0.5rem;
   max-width: 13rem;
@@ -105,11 +150,30 @@ input {
   text-decoration: none;
   color: var(--red);
 }
+.agreement a:hover {
+  color: var(--green);
+  cursor: pointer;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
   margin-bottom: 0.5rem;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+.attribution a:hover {
+  color: var(--dark-blue);
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.hide {
+  display: none;
+}
+.active {
+  border: 1px solid var(--red);
 }
