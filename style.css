@@ -25,6 +25,7 @@ body {
   font-size: 16px;
   font-weight: 400;
 }
+/*h1 amd description formatting*/
 h1 {
   font-size: 1.75rem;
   line-height: 2.5rem;
@@ -41,10 +42,7 @@ h1 {
   color: white;
   font-weight: 300;
 }
-.form-wrapper {
-  max-width: 20.5rem;
-  margin-top: 2rem;
-}
+/*offer card formatting*/
 .offer {
   font-size: 0.9rem;
   background-color: var(--blue);
@@ -56,6 +54,11 @@ h1 {
 }
 .try {
   font-weight: 600;
+}
+/*form wrapper and content formatting*/
+.form-wrapper {
+  max-width: 20.5rem;
+  margin-top: 2rem;
 }
 
 .form-card {
@@ -96,6 +99,24 @@ input {
   opacity: 0.5;
   cursor: pointer;
 }
+.agreement {
+  margin-top: 0.5rem;
+  max-width: 13rem;
+  font-weight: 500;
+  text-align: center;
+  font-size: 0.6rem;
+  margin-bottom: 1.5rem;
+  color: var(--grayish-blue);
+}
+.agreement a {
+  text-decoration: none;
+  color: var(--red);
+}
+.agreement a:hover {
+  color: var(--green);
+  cursor: pointer;
+}
+/*error messages formatting*/
 .error-message-1 {
   position: absolute;
   font-size: 0.6rem;
@@ -117,9 +138,11 @@ input {
 .error-message-4 {
   position: absolute;
   font-size: 0.6rem;
-  transform: translate(40%, 2150%);
+  transform: translate(40%, 2170%);
   color: var(--red);
 }
+
+/*error signs formatting*/
 .error-sign-1 {
   position: absolute;
   transform: translate(450%, 160%);
@@ -137,25 +160,9 @@ input {
   transform: translate(450%, 1130%);
 }
 
-.agreement {
-  margin-top: 0.5rem;
-  max-width: 13rem;
-  font-weight: 500;
-  text-align: center;
-  font-size: 0.6rem;
-  margin-bottom: 1.5rem;
-  color: var(--grayish-blue);
-}
-.agreement a {
-  text-decoration: none;
-  color: var(--red);
-}
-.agreement a:hover {
-  color: var(--green);
-  cursor: pointer;
-}
+/*footer formatting*/
 .attribution {
-  font-size: 11px;
+  font-size: 0.68rem;
   text-align: center;
   margin-bottom: 0.5rem;
 }
@@ -170,10 +177,136 @@ input {
   cursor: pointer;
   font-weight: 600;
 }
-
+/*hide and active classes*/
 .hide {
   display: none;
 }
 .active {
   border: 1px solid var(--red);
+}
+
+/*device breakpoint for desktop*/
+@media only screen and (min-width: 1000px) {
+  /*body formatting*/
+  body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    background-image: url("images/bg-intro-mobile.png");
+    background-color: var(--red);
+    background-position: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  main {
+    display: flex;
+    align-content: flex-start;
+  }
+  /*h1 amd description formatting*/
+  h1 {
+    font-size: 3.125rem;
+    line-height: 3.5rem;
+    text-align: left;
+    max-width: 33rem;
+    margin-top: 18rem;
+    margin-left: 10rem;
+    font-weight: 700;
+  }
+  .description {
+    max-width: 33rem;
+    text-align: left;
+    font-size: 1rem;
+    margin-top: 1rem;
+    font-weight: 500;
+    margin-left: 10rem;
+  }
+  /*offer card formatting*/
+  .offer {
+    font-size: 0.9rem;
+    background-color: var(--blue);
+    border-radius: 0.625rem;
+    box-shadow: 0rem 0.5rem 0rem rgba(0, 0, 0, 0.14688);
+    color: white;
+    padding: 1rem 6rem 1rem 6rem;
+
+    text-align: center;
+  }
+  .try {
+    font-weight: 600;
+  }
+  /*form wrapper and content formatting*/
+  .form-wrapper {
+    max-width: 34rem;
+    margin-top: 7.5rem;
+    margin-left: 3rem;
+    margin-right: 4rem;
+  }
+
+  .form-card {
+    max-width: 34rem;
+    margin-bottom: 1rem;
+  }
+
+  input {
+    max-width: 30rem;
+    padding: 0.8rem 11rem 0.8rem 0.8rem;
+  }
+  .claim {
+    max-width: 30rem;
+
+    padding: 0.7rem 6.5rem 0.7rem 6.5rem;
+  }
+
+  .agreement {
+    max-width: 30rem;
+  }
+
+  /*error messages formatting*/
+  .error-message-1 {
+    transform: translate(90%, 550%);
+  }
+  .error-message-2 {
+    transform: translate(90%, 1100%);
+  }
+  .error-message-3 {
+    transform: translate(80%, 1650%);
+  }
+  .error-message-4 {
+    transform: translate(90%, 2190%);
+  }
+
+  /*error signs formatting*/
+  .error-sign-1 {
+    transform: translate(700%, 160%);
+  }
+  .error-sign-2 {
+    transform: translate(700%, 490%);
+  }
+  .error-sign-3 {
+    transform: translate(700%, 810%);
+  }
+  .error-sign-4 {
+    transform: translate(700%, 1130%);
+  }
+
+  /*footer formatting*/
+  footer {
+    margin: 0 auto;
+  }
+  .attribution {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  /*hide and active classes*/
+  .hide {
+    display: none;
+  }
+  .active {
+    border: 1px solid var(--red);
+  }
 }
