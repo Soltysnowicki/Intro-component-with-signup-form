@@ -212,7 +212,6 @@ input {
     text-align: left;
     max-width: 33rem;
     margin-top: 18rem;
-    margin-left: 10rem;
     font-weight: 700;
   }
   .description {
@@ -221,7 +220,6 @@ input {
     font-size: 1rem;
     margin-top: 1rem;
     font-weight: 500;
-    margin-left: 10rem;
   }
   /*offer card formatting*/
   .offer {
@@ -231,7 +229,6 @@ input {
     box-shadow: 0rem 0.5rem 0rem rgba(0, 0, 0, 0.14688);
     color: white;
     padding: 1rem 6rem 1rem 6rem;
-
     text-align: center;
   }
   .try {
